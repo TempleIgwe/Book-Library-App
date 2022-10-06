@@ -1,0 +1,22 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    background-color: bisque;
+    color: brown;
+    
+}
+label,
+.read{
+    padding: .5rem ;
+}
+::placeholder{
+    text-align: center;
+    font-size: .6rem;
+    color: green;
+}
+/* .radio-btn{
+    color: green;
+} */

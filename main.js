@@ -1,3 +1,7 @@
+document.getElementById("new-book").addEventListener("click", function(){
+    docummet.querySelector(".popup").style.display = "block";
+})
+
 let myLibrary = [{
     title: 'Glory',
     author:'Novilet Bulawayo',
@@ -44,3 +48,4 @@ function bookDisplay(){
 
     })
 }
+

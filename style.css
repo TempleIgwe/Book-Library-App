@@ -1,12 +1,16 @@
-.form{
+.popup{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 20%;
     background-color: bisque;
     color: brown;
     
+}
+img{
+    width: 20%;
+    margin-top: 1rem;
 }
 label,
 .read{
@@ -17,6 +21,15 @@ label,
     font-size: .6rem;
     color: green;
 }
-/* .radio-btn{
-    color: green;
-} */
+.btn{
+    margin: .5rem;
+    width: 50%;
+    padding: .2rem;
+    background-color: rgb(140, 240, 140);
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+}
+.popup{
+    display: none;
+}

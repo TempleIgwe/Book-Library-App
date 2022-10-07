@@ -8,9 +8,9 @@
     <title>Book Library App</title>
 </head>
 <body>
-    <div>
-        <div class="form">
-            <h1>Add New Books</h1>
+    <div class="container">
+        <div class="popup">
+            <img src="./icon/book-open-solid.svg" alt="">
 
             <label for="title"><b>Title</b></label>
             <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
@@ -29,6 +29,9 @@
             </div>
             
             <button id='formSubmit' class="btn">Submit</button>
+        </div>
+        <div>
+            <button type="button" id="new-book" class="openform">New Book</button>
         </div>
         <div class="book-title">
             <h1>Current Books In Library</h1>

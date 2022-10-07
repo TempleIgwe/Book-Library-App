@@ -9,8 +9,13 @@
 </head>
 <body>
     <div class="container">
+        <div>
+            <button type="button" id="new-book" class="openform">New Book</button>
+            <p class="remove-book"></p>
+        </div>
         <div class="popup">
             <img src="./icon/book-open-solid.svg" alt="">
+           
 
             <label for="title"><b>Title</b></label>
             <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
@@ -20,6 +25,9 @@
             
             <label for="pages"><b>Pages</b></label>
             <input id='formPages' type="number" placeholder="Enter Number of Pages" name="pages" required>
+
+            <label for="pages"><b>Book Image</b></label>
+            <input id='formImage' type="url" placeholder="Enter book image URL" name="bookurl">
             
             <div class="read">
                 <label for="isRead">Read?</label>
@@ -30,9 +38,7 @@
             
             <button id='formSubmit' class="btn">Submit</button>
         </div>
-        <div>
-            <button type="button" id="new-book" class="openform">New Book</button>
-        </div>
+        
         <div class="book-title">
             <h1>Current Books In Library</h1>
         </div>

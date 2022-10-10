@@ -8,12 +8,12 @@
     <title>Book Library App</title>
 </head>
 <body>
-    <div class="container">
+    <div>
         <div>
             <button type="button" id="new-book" class="openform">New Book</button>
             <p class="remove-book"></p>
         </div>
-        <div class="popup">
+        <form class="popup" >
             <img src="./icon/book-open-solid.svg" alt="">
            
 
@@ -36,8 +36,8 @@
 
             </div>
             
-            <button id='formSubmit' class="btn">Submit</button>
-        </div>
+            <button onclick="bookDisplay()" id='formSubmit' class="btn">Submit</button>
+        </form>
         
         <div class="book-title">
             <h1>Current Books In Library</h1>

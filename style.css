@@ -1,4 +1,9 @@
+.new-book,
+form{
+    margin-left: 30rem;
+}
 .popup{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +17,7 @@ img{
     width: 20%;
     margin-top: 1rem;
 }
+
 label,
 .read{
     padding: .5rem ;
@@ -32,4 +38,69 @@ label,
 }
 .popup{
     display: none;
+}
+
+@media(max-width: 992px){
+    .new-book,
+     form{
+       margin-left: 15rem;
+       
+       
+    }
+    input {
+        width: 80%;    
+    }
+    
+    .read{
+        display: flex;
+        align-items: center;
+        
+    }
+    .popup{
+        width: 40%;
+        display: block;
+        background-color: rgb(9, 77, 21);
+        color: rgb(240, 213, 140);
+    }
+    .btn{
+        margin: .5rem;
+        width: 50%;
+        padding: .2rem;
+        background-color: rgb(240, 172, 140);
+        color: #fff;
+        border: none;
+        border-radius: 0.2rem;
+    }
+    .popup {
+        display: none;
+    }
+    
+
+
+}
+@media(max-width: 600px){
+    .new-book,
+     form{
+       margin-left: 0;
+       text-align: center;
+    }
+    .popup {
+        width: 100%;
+        display: block;
+        background-color: rgb(9, 32,63);
+        color: bisque;
+    
+    }
+    .btn{
+        margin: .5rem;
+        width: 50%;
+        padding: .2rem;
+        background-color: rgb(240, 160, 140);
+        color: #fff;
+        border: none;
+        border-radius: 0.2rem;
+    }
+    .popup{
+       display: none;
+    }
 }

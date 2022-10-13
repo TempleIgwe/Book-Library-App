@@ -4,12 +4,12 @@ openButton.addEventListener("click", function(){
     document.querySelector(".popup").style.display = "flex";
 }) 
 
-function Book(title, author, pages, bookImage,read){
+function Book(title, author, pages, bookImage,isRead){
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.bookImage = bookImage;
-    this.read;
+    this.isRead = isRead;
 }
 
 
@@ -17,20 +17,22 @@ function bookDisplay(){
    myLibrary.forEach(book => {
 
        let bookCard = document.body.querySelector(".books");
-       let bookElement = `<li>
+       let bookElement = `
        <h1>${book.title}</h1>
-       <h1>${book.author}</h1>
-       <h1>${book.pages}</h1>
-   
-       </li>`
+       <h3>${book.author}</h3>
+       <h3>${book.pages}</h3>
+       <img src = ${book.image}/>
+       <h3>${book.isRead}</h3>
+
+       `
        bookCard.innerHTML += bookElement
     //    bookCard.append()
        
     })
 }
 
-function addBookToLibrary(title, author, pages, bookImage, read){
-    let book = new Book(title, author, pages,  bookImage, read);
+function addBookToLibrary(title, author, pages, bookImage, isRead){
+    let book = new Book(title, author, pages,  bookImage, isRead);
     myLibrary.push(book);
 }
 

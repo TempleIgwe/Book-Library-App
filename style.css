@@ -1,106 +1,98 @@
 .new-book,
-form{
+form {
     margin-left: 30rem;
 }
-.popup{
+
+.popup {
     margin-top: 1rem;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 20%;
     background-color: bisque;
     color: brown;
-    
+    display: none;
 }
-img{
+
+img {
     width: 20%;
     margin-top: 1rem;
 }
 
 label,
-.read{
-    padding: .5rem ;
+.read {
+    padding: 0.5rem;
 }
-::placeholder{
+
+::placeholder {
     text-align: center;
-    font-size: .6rem;
+    font-size: 0.6rem;
     color: green;
 }
-.btn{
-    margin: .5rem;
+
+.btn {
+    margin: 0.5rem;
     width: 50%;
-    padding: .2rem;
+    padding: 0.2rem;
     background-color: rgb(140, 240, 140);
     color: #fff;
     border: none;
     border-radius: 0.2rem;
 }
-.popup{
+
+@media (max-width: 992px) {
+  .new-book,
+  form {
+    margin-left: 15rem;
+  }
+  input {
+    width: 80%;    
+  }
+  .read{
+    display: flex;
+    align-items: center;
+  }
+
+  .popup{
+    width: 40%;
+    background-color: rgb(9, 77, 21);
+    color: rgb(240, 213, 140);
     display: none;
-}
+  }
 
-@media(max-width: 992px){
-    .new-book,
-     form{
-       margin-left: 15rem;
-       
-       
-    }
-    input {
-        width: 80%;    
-    }
-    
-    .read{
-        display: flex;
-        align-items: center;
-        
-    }
-    .popup{
-        width: 40%;
-        display: block;
-        background-color: rgb(9, 77, 21);
-        color: rgb(240, 213, 140);
-    }
-    .btn{
-        margin: .5rem;
-        width: 50%;
-        padding: .2rem;
-        background-color: rgb(240, 172, 140);
-        color: #fff;
-        border: none;
-        border-radius: 0.2rem;
-    }
-    .popup {
-        display: none;
-    }
-    
-
+  .btn{
+    margin: 0.5rem;
+    width: 50%;
+    padding: 0.2rem;
+    background-color: rgb(240, 172, 140);
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+  }
 
 }
-@media(max-width: 600px){
-    .new-book,
-     form{
-       margin-left: 0;
-       text-align: center;
-    }
-    .popup {
-        width: 100%;
-        display: block;
-        background-color: rgb(9, 32,63);
-        color: bisque;
-    
-    }
-    .btn{
-        margin: .5rem;
-        width: 50%;
-        padding: .2rem;
-        background-color: rgb(240, 160, 140);
-        color: #fff;
-        border: none;
-        border-radius: 0.2rem;
-    }
-    .popup{
-       display: none;
-    }
+
+@media(max-width: 600px) {
+  .new-book,
+  form {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .popup {
+    width: 100%;
+    background-color:rgb(9, 32,63);
+    color: bisque;
+    display: none;
+  }
+
+  .btn { 
+    margin: 0.5rem;
+    width: 50%;
+    padding: 0.2rem;
+    background-color: rgb(240, 160, 140);
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+  }
 }

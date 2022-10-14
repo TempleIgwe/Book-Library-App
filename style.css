@@ -40,6 +40,7 @@ label,
     border-radius: 0.2rem;
 }
 
+
 @media (max-width: 992px) {
   .new-book,
   form {

@@ -9,8 +9,8 @@ function Book(title, author, pages, bookImage,isRead) {
   this.title = title;
   this.author = author;
   this.pages = pages;
-    this.bookImage = bookImage;
-    this.isRead = isRead;
+  this.bookImage = bookImage;
+  this.isRead = isRead;
 }
 
 
@@ -18,15 +18,28 @@ function bookDisplay(){
    myLibrary.forEach(book => {
 
        let bookCard = document.body.querySelector(".books");
+       bookCard.style.backgroundColor = "green";
+       bookCard.style.color = "gold";
+       bookCard.style.border = "1px solid red";
+       bookCard.style.borderRadius = "5px";
+       bookCard.style.width = "20vw";
+       bookCard.style.textAlign = "center";
+       
+      
        let bookElement = `
        <h1>${book.title}</h1>
        <h3>${book.author}</h3>
        <h3>${book.pages}</h3>
        <img src = ${book.image}/>
-       <h3>${book.isRead} || ${book.notRead}</h3>
+       <h3>${book.isRead}</h3>
        `
        bookCard.innerHTML += bookElement
-    //    bookCard.append()
+    
+    if (bookElement.innerHTML.indexOf(bookElement) !== -1){
+       
+        bookCard.append(bookElement)
+
+    }
        
     })
 }

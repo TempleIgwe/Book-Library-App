@@ -14,6 +14,74 @@
           
         </div>
         <div class="form">
+            <form class="popup" >
+            <img src="./icon/book-open-solid.svg" alt="">
+           
+
+            <label for="title"><b>Title</b></label>
+            <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
+            
+            <label for="author"><b>Author</b></label>
+            <input id='formAuthor' type="text" placeholder="Enter Author" name="author" required>
+            
+            <label for="pages"><b>Pages</b></label>
+            <input id='formPages' type="number" placeholder="Enter Number of Pages" name="pages" required>
+
+            <label for="url"><b>Book Image</b></label>
+            <input id='formImage' type="url" placeholder="Enter book image URL" name="bookurl">
+            
+            <select name="Read" id="Read">
+                <option value="Read">Read</option>
+                <option value="not-Read">Not Read</option>
+            </select>
+            
+            <button type="submit" class="btn formSubmit">Submit</button>
+            <button type="reset" class="reset-button">Reset Form</button>
+           
+            
+        </form>
+        </div>
+        
+       
+
+        <div class="book-title">
+            <h1>Current Books In Library</h1>
+        </div>
+        <div class="book-card">
+            <div class="books"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Library App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="new-book">
+            <button type="button" id="new-book" class="openform">New Book</button>
+          
+        </div>
+        <div class="form">
              <form class="popup" >
             <img src="./icon/book-open-solid.svg" alt="">
            
@@ -56,4 +124,4 @@
 
     <script src="./main.js"></script>
 </body>
-</html>
+</html> -->

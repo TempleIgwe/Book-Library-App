@@ -14,40 +14,47 @@
           
         </div>
         <div class="form">
-             <form class="popup" >
-            <img src="./icon/book-open-solid.svg" alt="">
-           
+            <div class="form-inputs">
+                <form class="popup" >
+                    <img src="./icon/book-open-solid.svg" alt="">
 
-            <label for="title"><b>Title</b></label>
-            <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
-            
-            <label for="author"><b>Author</b></label>
-            <input id='formAuthor' type="text" placeholder="Enter Author" name="author" required>
-            
-            <label for="pages"><b>Pages</b></label>
-            <input id='formPages' type="number" placeholder="Enter Number of Pages" name="pages" required>
-
-            <label for="url"><b>Book Image</b></label>
-            <input id='formImage' type="url" placeholder="Enter book image URL" name="bookurl">
-            
-            <div class="read">
-                <label for="isRead">Read?</label>
-                <input name='formRead' id='form-Read' class="radio-btn" type='radio' value="Read" required>Read
-                <input name='formRead' id='form-NotRead' class="radio-btn" type='radio' value="Not Read">Not Read
-
+                    <span class="close">&times;</span>
+                    
+                    <label for="title"><b>Title</b></label>
+                    <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
+                
+                    <label for="author"><b>Author</b></label>
+                    <input id='formAuthor' type="text" placeholder="Enter Author" name="author" required>
+                
+                    <label for="pages"><b>Pages</b></label>
+                    <input id='formPages' type="number" placeholder="Enter Number of Pages" name="pages" required>
+    
+                    <label for="url"><b>Book Image</b></label>
+                    <input id='formImage' type="url" placeholder="Enter book image URL" name="bookurl">
+                
+                    <div class="isRead">
+    
+                        <label for="isRead">Read?</label>
+                        <input name='formRead' id='form-Read' class="radio-btn" type='radio' value="Read" required>Read
+                        <input name='formRead' id='form-NotRead' class="radio-btn" type='radio' value="Not Read">Not Read
+    
+                    </div>
+                    <div class="form-btn">
+                    <button type="submit" class="btn formSubmit">Submit</button>
+                    <button type="reset" class="btn formReset">Reset</button>
+                    </div>
+               
+                
+                </form>
             </div>
-            <button type="submit" class="btn formSubmit">Submit</button>
-           
-            
-        </form>
         </div>
         
-       
-
         <div class="book-title">
             <h1>Current Books In Library</h1>
         </div>
-        <div class="books"></div>
+        <div class="grid-card">
+            <div class="books"></div>
+        </div>
     </div>
 
 

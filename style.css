@@ -91,6 +91,7 @@ input:hover{
    
 }
 
+<<<<<<< HEAD
 .btn:hover{
   background-color: rgb(140, 163, 240);
   color: black;
@@ -126,6 +127,14 @@ input:hover{
 
 /* @media (max-width: 992px) {
  
+=======
+
+@media (max-width: 992px) {
+  .new-book,
+  form {
+    margin-left: 15rem;
+  }
+>>>>>>> e95a4087d4f397d34fec19be4bab8f418e73ce7b
   input {
     width: 80%;    
   }

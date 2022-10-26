@@ -12,8 +12,8 @@
   margin: 3% auto; 
   padding: 1rem;
   border: 1px solid #888;
-  width: 30%; 
-  height: 70%;
+  width: 20%; 
+  height: 50%;
   background-color: bisque;
   color: brown;
 }
@@ -87,7 +87,7 @@ input:hover{
     width: 50%;
     padding: 0.2rem;
     display: block;
-    margin:9px auto;
+    margin:19px auto;
     background-color: rgb(140, 240, 140);
     color: #fff;
     border: none;
@@ -131,7 +131,7 @@ input:hover{
     padding: 1rem;
     border: 1px solid #888;
     width: 60%; 
-    height: 80%;
+    height: 60%;
     background-color: bisque;
     color: brown;
   }
@@ -154,8 +154,8 @@ input:hover{
     margin: 3% auto; 
     padding: 1rem;
     border: 1px solid #888;
-    width: 30%; 
-    height: 80%;
+    width: 20%; 
+    height: 60%;
     background-color: bisque;
     color: brown;
   }
@@ -165,16 +165,16 @@ input:hover{
   }
   .close {
     
-    right:16.5rem;
+    right:18.5rem;
   }
 }
 @media(min-width:992px){
   .close {
-    right:22.5rem;
+    right:2.5rem;
   }
 }
 @media(min-width:1200px){
   .close {
-    right:30.5rem;
+    right:40.5rem;
   }
 }

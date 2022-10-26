@@ -13,11 +13,10 @@ span.onclick = function() {
   popup.style.display = "none";
 }
 
-function Book(title, author, pages, bookImage, isRead) {
+function Book(title, author, pages, isRead) {
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.bookImage = bookImage;
   this.isRead = isRead;
 }
 function bookDisplay() {
@@ -28,21 +27,25 @@ function bookDisplay() {
           <h1>${book.title}</h1>
           <h3>${book.author}</h3>
           <h3>${book.pages}</h3>
-          <img src = ${book.image}/>
           <h3>${book.isRead}</h3>
           <button class ="read-status">Read Status</button>
           <button class ="remove-book">Remove Book</button>
        </div>
        `;
         bookCard.innerHTML += bookElement;
-    // let readStatusBtn = document.querySelector(".read-status");
-    // let removeBook = document.querySelector("remove-book");
+    let readStatusBtn = document.querySelector("read-status");
+
+    let removeBtn = document.querySelector("remove-book");
     
+     removeBtn.addEventListener("click", () => {
+       book.remove();
+       bookDisplay();
+     });
     readStatusBtn.setAttribute("data-index", myLibrary.indexOf(bookDisplay));
 
     bookCard.setAttribute("data-index", myLibrary.indexOf(bookDisplay));
 
-    bookCard.append(removeBook);
+   
     function changeBook(e) {
         if (e.target.classList.contains("remove-book")) {
           let index = e.target.getAttribute('data-index');
@@ -68,8 +71,8 @@ function bookDisplay() {
       readStatusBtn.addEventListener("click", changeBook);
     }    
 
-function addBookToLibrary(title, author, pages, bookImage, isRead) {
-  let book = new Book(title, author, pages, bookImage, isRead);
+function addBookToLibrary(title, author, pages, isRead) {
+  let book = new Book(title, author, pages, isRead);
   myLibrary.push(book);
 }
 
@@ -78,11 +81,10 @@ function handleSubmit(e) {
   let title = document.querySelector("#formTitle").value;
   let author = document.querySelector("#formAuthor").value;
   let pages = document.querySelector("#formPages").value;
-  let bookImage = document.querySelector("#formImage").value;
   let read = document.querySelector("#form-Read").value;
   let notRead = document.querySelector("#form-NotRead").value;
 
-  addBookToLibrary(title, author, pages, bookImage, read || !notRead);
+  addBookToLibrary(title, author, pages, read || !notRead);
   bookDisplay();
   
   document.querySelector(".popup").reset();
